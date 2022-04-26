@@ -45,7 +45,7 @@ def wrangle_client(df):
     
     # rename columns
     df = df.rename(columns = {
-        'SeriousDlqin2yrs': 'serious_delinquency' , 'RevolvingUtilizationOfUnsecuredLines': 'revolv_unsec_utilization' , 'NumberOfTime30-59DaysPastDueNotWorse': 'quantity_30-59_pd',
+        'SeriousDlqin2yrs': 'serious_delinquency' , 'RevolvingUtilizationOfUnsecuredLines': 'revolv_unsec_utilization' , 'NumberOfTime30-59DaysPastDueNotWorse': 'quantity_30_59_pd',
         'DebtRatio': 'debt_to_income_ratio', 'MonthlyIncome': 'monthly_income', 'NumberOfOpenCreditLinesAndLoans': 'quantity_loans_and_lines', 'NumberOfTimes90DaysLate':
         'quantity_90_days_pd', 'NumberRealEstateLoansOrLines': 'quantity_real_estate_loans', 'NumberOfTime60-89DaysPastDueNotWorse': 'quantity_60_89_days_pd',
         'NumberOfDependents':'quantity_dependents'})
