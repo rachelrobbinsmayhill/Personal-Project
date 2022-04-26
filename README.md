@@ -1,6 +1,8 @@
 CAN I GET A LITTLE CREDIT?
 
-An Exploration of Credit Worthiness; Using Classification to Predict Serious Repayment Delinquency
+An Exploration of Credit Worthiness
+
+Using Classification to Predict Serious Repayment Delinquency
 
 ===
 
@@ -35,7 +37,7 @@ Table of Contents
 ## I. PROJECT OVERVIEW
  
  
-#### 1.  GOAL:
+#### 1. GOAL:
 The goal of this project is to build a model that borrowers can use to help make the best financial decisions.
  
  
