@@ -1,6 +1,5 @@
 env.py
-.ipynp_checkpoint/
+.ipynp_checkpoints/
 .DS_Store
 __pychache__/
-*.csv
 *.xlsx
