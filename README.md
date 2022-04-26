@@ -1,4 +1,5 @@
-TITLE
+CAN I GET A LITTLE CREDIT?
+An Exploration of Credit Worthiness; Using Classification to Predict Serious Repayment Delinquency
 
 ===
 
@@ -34,11 +35,15 @@ Table of Contents
  
  
 #### 1.  GOAL:
-The goal of this project is to _____________
+The goal of this project is to build a model that borrowers can use to help make the best financial decisions.
  
  
 #### 2. DESCRIPTION:
+Banks play a crucial role in market economies. They decide who can get finance and on what terms and can make or break investment decisions. For markets and society to function, individuals and companies need access to credit.
 
+Credit scoring algorithms, which make a guess at the probability of default, are the methods banks use to determine whether or not a loan should be granted. This project aims to improve upon the state of the art in credit scoring, by predicting the probability that somebody will experience financial distress in the next two years.
+
+I am interested in this project because identifying at-risk populations helps to protect the consumer, the business, the market, and society as a whole. Identifying customers who are at risk of default helps to prevent the consumer from entering into a situation that could be harmful to their long-term financial stability. It helps the banking institution prevent significant and costly losses which could impact business sustainability and limit the potential to help others. Lastly, as we saw with the housing crisis of 2008, accurately identifying at-risk loan applicants can prevent the destabilizing of the market which can have far-reaching consequences for society as a whole.
  
  
 #### 3.INITIAL QUESTIONS:
@@ -170,7 +175,7 @@ Using Jupyter Notebook:
   
 ## V. PROJECT REPRODUCTION:
 ### Steps to Reproduce
- - [x] You will need ________________
+- [x] You will need ________________
 - [x] Store that env file locally in the repository
 - [x] Make .gitignore and confirm .gitignore is hiding your env.py file
 - [x] Clone our repo (including the wrangle.py)
