@@ -1,5 +1,5 @@
 CAN I GET A LITTLE CREDIT?
-An Exploration of Credit Worthiness; Using Classification to Predict Serious Repayment Delinquency
+- An Exploration of Credit Worthiness; Using Classification to Predict Serious Repayment Delinquency
 
 ===
 
