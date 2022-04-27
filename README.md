@@ -155,26 +155,27 @@ Using Jupyter Notebook:
      - [x] Explain plan of action as deduced from work to this point
  
 #### 5. MODEL & EVALUATE
-- [x] No modeling was necessary for this project, however, modeling could be added to next steps if desired.
-
+Using Jupyter Notebook:
+- [x] Establish baseline accuracy
+- [x] Train and fit multiple (3+) models with varying algorithms and/or hyperparameters
+- [x] Compare evaluation metrics across models
+- [x] Remove unnecessary features
+- [x] Evaluate best performing models using validate set
+- [x] Choose best performing validation model for use on test set
+- [x] Test final model on out-of-sample testing dataset
+- [x] Summarize performance
+- [x] Interpret and document findings
+ 
 #### 6. DELIVERY
-- [x]  Prepare a five-minute presentation using Google Sheets
-     - [x]  Include an introduction of the project and goals
-     - [x]  Provide an executive summary of findings, key takeaways, recommendations, and rationale
-     - [x]  Create a walkthrough of the analysis 
-     - [x]  Include 2 presentation-worthy visualizations that support the problem and recommendation
-     - [x]  Provide final takeaways, recommend a course of action, and next steps
-     - [x]  Be prepared to answer questions following the presentation
 - [x]  Prepare final notebook in Jupyter Notebook
+     - [x]  Include introduction of project and goals     
+     - [x]  Provide executive summary of findings, key takeaways, and recommendations
      - [x]  Create clear walk-though of the Data Science Pipeline using headings and dividers
      - [x]  Explicitly define questions asked during the initial analysis
      - [x]  Visualize relationships
-     - [x]  Document takeaways
+     - [x]  Provide final takeaways, recommend course of action, and next steps
      - [x]  Comment code thoroughly
 
-
-
- 
  
 ## IV. PROJECT MODULES:
 - [x] wrangle.py - provides reproducible python code to automate acquiring, preparing, and splitting the data
@@ -182,11 +183,10 @@ Using Jupyter Notebook:
   
 ## V. PROJECT REPRODUCTION:
 ### Steps to Reproduce
-- [x] You will need ________________
-- [x] Store that env file locally in the repository
-- [x] Make .gitignore and confirm .gitignore is hiding your env.py file
-- [x] Clone our repo (including the wrangle.py)
+- [x] Make .gitignore and add any file types you would like ignored, such as .pycache or .ipynb_checkpoints
+- [x] You will need the client_data.csv found inside this repo, so do NOT add .csv files to the .gitignore.
+- [x] Clone this repo (including the wrangle.py)
 - [x] Import python libraries:  pandas, matplotlib, seaborn, numpy, and sklearn
-- [x] Follow steps as outlined in the README.md. and mathias_work.ipynb
-- [x] Run Final_Report.ipynb to view the final product
+- [x] Follow steps as outlined in the README.md. and work.ipynb
+- [x] Run final_report.ipynb to view the final product
 
