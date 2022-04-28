@@ -23,14 +23,12 @@ def get_client_data():
 
 
 
-
 def wrangle_client(df):
     '''
     This function takes in a dataframe, drops the Unnamed index column, drops all rows with null values within the dataframe. 
     It then renames columns for understanding and ease of use, then creates binned categorical columns 
     for ages and dependent numbers. 
     '''
-    
 
     # drop Unnamed column as it is not needed
     df = df.drop(['Unnamed: 0'], axis=1)
@@ -38,35 +36,24 @@ def wrangle_client(df):
     # drop rows with nulls
     df = df.dropna(axis = 0)
     
-    # rename columns
+    # rename columns to make them lower case and more clearly defined
     df = df.rename(columns = {
         'SeriousDlqin2yrs': 'serious_delinquency' , 'RevolvingUtilizationOfUnsecuredLines': 'revolv_unsec_utilization' , 'NumberOfTime30-59DaysPastDueNotWorse': 'quantity_30_59_pd',
         'DebtRatio': 'debt_to_income_ratio', 'MonthlyIncome': 'monthly_income', 'NumberOfOpenCreditLinesAndLoans': 'quantity_loans_and_lines', 'NumberOfTimes90DaysLate':
         'quantity_90_days_pd', 'NumberRealEstateLoansOrLines': 'quantity_real_estate_loans', 'NumberOfTime60-89DaysPastDueNotWorse': 'quantity_60_89_days_pd',
-        'NumberOfDependents':'quantity_dependents'})
-                  
+        'NumberOfDependents':'quantity_dependents'})                
     
-    # Make categorical column for age.
-    df['age_bins'] = pd.cut(df.age, bins=[0, 19, 29, 39, 49, 59, 69, 79, 89, 105], 
-                              labels = ['age_0-19','age_20-29', 'age_30-39', 'age_40-49', 'age_50-59', 'age_60-69', 'age_70-79', 'age_80-89', 'age_90-105'])
+    # Make categorical column for age bins.
+    df['age_bins'] = pd.cut(df.age, bins=[0, 19, 24, 34, 44, 54, 64, 74, 84, 105], 
+                              labels = ['age_0-19', 'age_20_24','age_25-34', 'age_35-44', 'age_45-54', 'age_54-64', 'age_65-74', 'age_75-84', 'age_85-105'])
     
-    # Make categorical column for dependents.
+    # Make categorical column for dependent bins.
     df['quantity_dependents_bins'] = pd.cut(df.quantity_dependents, bins=[-1, 0, 2, 4, 6, 21], 
                               labels = ['0_dep','1_2_dep', '3_4_dep', '5_6_dep', '7_or_more_dep'])
     
+    # manually remove outliers from the monthly_income column. 
+    df = df[df.monthly_income < 15_000]
     
-    # convert datatypes
-    #df = df.astype(convert_dict)
-    
-
-   
-    # Make dummy columns for state_county_code using the binned column for processin gin modeling later. 
-    #dummy_df = pd.get_dummies(df[['county_code_bin']], dummy_na=False, drop_first=[True])
-    
-    # Add dummy columns to dataframe
-    #df = pd.concat([df, dummy_df], axis=1)
-
-
     
     return df
 
