@@ -64,27 +64,6 @@ The initial hypothesis of the project was that those with serious delinquency we
 
 
  
-##### Overall Project-Focused Questions
-- What will the end product look like?
-    + A GitHub Repository containing an end-to-end data science pipeline project of personal choosing.
-- What format will it be in?
-    + A GitHub Repository with a .gitignore, README.md, wrangle.py, work.ipynb, report.ipynb.  
-- Who will it be delivered to?
-   + Peers Review Process and Instructors
-- How will it be used?
-   + To display unique interests and skillset as an individual within a cohort.
-- How will I know I'm done?
-   + When I have a question, answer thorugh statistics/visualization, and modeling.
-- What is my MVP?
-   + A project that runs thorugh the entire pipeline to include modeling, while asking and answering one question. 
-- How will I know it's good enough?
-   + When I have imporved upon my MVP. 
- 
-
-
-
- 
- 
 #### 5. DELIVERABLES:
 - [x] README file - provides an overview of the project and steps for project reproduction
 - [x] Draft Jupyter Notebook - provides all steps taken to produce the project
@@ -103,6 +82,18 @@ The final DataFrame used to explore the data for this project contains the follo
 | :--------------------:   | :----------------------------------------: | :--------------------: |
 column_name    |  Description                        |  datatype   |
 
+serious_ delinquency (*target)  | Person experienced 90 days past due delinquency or worse | booolean(Y/N) | 
+revolv_unsec_utilization | Total balance on credit cards and personal lines of credit except real estate and no installment debt like car loans divided by the sum of credit limits | float (percentage) | 
+quantity_real_estate_loans | Number of mortgage and real estate loans including home equity lines of credit | integer | 
+quantity_loans_and_lines | Number of Open loans (installment like car loan or mortgage) and Lines of credit (e.g. credit cards) | integer | 
+quantity_dependents | Number of dependents in family excluding themselves (spouse, children etc.) | float | 
+quantity_90_days_pd | Number of times borrower has been 90 days or more past due. | integer | 
+quantity_60_89_days_pd | Number of times borrower has been 60-89 days past due but no worse in the last 2 years. | integer | 
+quantity_30-59_pd | Number of times borrower has been 30-59 days past due but no worse in the last 2 years. | integer | 
+monthly_income | Monthly income | float | 
+debt_to_income_ratio | Monthly debt payments, alimony,living costs divided by monthy gross income | float (percentage) | 
+age | Age of borrower in years | integer | 
+
 
  
 ## III. PROJECT PLAN - USING THE DATA SCIENCE PIPELINE:
@@ -118,17 +109,17 @@ Plan➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 - [x]  Create a plan for completing the project using the data science pipeline
 - [x]  Create a data dictionary to define variables and data context
 - [x]  Draft starting hypothesis
+- [x]  Create local folder and repository for project
  
 #### 2. ACQUIRE
 - [x]  Create .gitignore
-- [x]  Create env file with log-in credentials
-- [x]  Store env file in .gitignore to ensure the security of sensitive data
+- [x]  Obtain client_data.csv and save in local folder/project repository
 - [x]  Create wrangle.py module
 - [x]  Store functions needed to acquire the dataset
 - [x]  Ensure all imports needed to run the functions are inside the wrangle.py document
 - [x]  Using Jupyter Notebook
      - [x]  Run all required imports
-     - [x] Import functions from wrangle.py module
+     - [x]  Import functions from wrangle.py module
      - [x]  Summarize dataset using methods and document observations
  
 #### 3. PREPARE
@@ -136,15 +127,14 @@ Using Jupyter Notebook
 - [x]  Import functions from wrangle.py module
 - [x]  Summarize dataset using methods and document observations
 - [x]  Clean data
-- [x]  Features need to be turned into numbers
-- [x]  Categorical features or discrete features need to be numbers that represent those categories
-- [x]  Continuous features may need to be standardized to compare like datatypes
-- [x]  Address missing values, data errors, unnecessary data, renaming
+    - [x]  Address missing values, data errors, unnecessary data, renaming for functionality
+    - [x]  Categorical features or discrete features need to be numbers that represent those categories
+    - [x]  Continuous features may need to be standardized to compare like datatypes
+    - [x]  Consider feature engineering to combine features or bin continuous data into categorical    
 - [x]  Split data into train, validate, and test samples
 Using Python Scripting Program (Jupyter Notebook)
 - [x]  Create prepare function within wrangle.py
-- [x]  Store functions needed to prepare the data such as:
-   - [x]  Cleaning Function: to clean data for exploration
+- [x]  Store functions needed to prepare the data
 - [x]  Ensure all imports needed to run the functions are inside the wrangle.py document
  
 #### 4.EXPLORE
@@ -153,7 +143,7 @@ Using Jupyter Notebook:
      - [x]  Run at least two statistical tests
      - [x]  Document findings
 - [x]  Create visualizations with the intent to discover variable relationships
-     - [x]  Identify variables related to _________
+     - [x]  Identify variables related to serious delinquency
      - [x]  Identify any potential data integrity issues
 - [x]  Summarize conclusions, provide clear answers, and summarize takeaways
      - [x] Explain plan of action as deduced from work to this point
@@ -188,9 +178,8 @@ Using Jupyter Notebook:
 ## V. PROJECT REPRODUCTION:
 ### Steps to Reproduce
 - [x] Make .gitignore and add any file types you would like ignored, such as .pycache or .ipynb_checkpoints
-- [x] You will need the client_data.csv found inside this repo, so do NOT add .csv files to the .gitignore.
+- [x] You will need the client_data.csv found inside this repo, so do NOT add .csv files to the .gitignore
 - [x] Clone this repo (including the wrangle.py)
 - [x] Import python libraries:  pandas, matplotlib, seaborn, numpy, and sklearn
 - [x] Follow steps as outlined in the README.md. and work.ipynb
 - [x] Run final_report.ipynb to view the final product
-
