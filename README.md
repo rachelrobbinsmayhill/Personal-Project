@@ -52,10 +52,17 @@ The initial hypothesis of the project was that those with serious delinquency we
  
 #### 5. KEY FINDINGS:
  
- 
- 
-.......how they apply to the business, recommendations and next steps. If your primary deliverable is a model, it's great to also include how the model expects to perform on future data....
+The goal of this report was to identify drivers of borrower serious delinquency and to build a model that could be used to help borrowers and banking institutions make the best financial decisions.  
+Through the process of data acquisition, preparation, exploration, and statistical testing, it was determined borrowers more at-risk of serious delinquency are borrowers: 
 
+- between the ages of 20 and 40
+- who have an average monthly income of \\$4900, which is about \\$800 lower than those who are not seriously delinquent  
+- who have an average debt to income ratio of 16\%, 13\% lower than those who are not seriously delinquent
+- who have an average revolving credit utilization rate of 315\%, over 250\% **lower** than those who are not seriously delinquent
+
+By using machine learning modeling, predictions to identify serious delinquency were made with 93% accuracy using the best performing model, a Random Forest model with max depth and minimum leaf sample of 12. The performance of this model was not significantly better than baseline, which was also at 93% accuracy.
+
+It is recommended the next step for this project be to downsample the train data, in order to address the inbalance of data in this set. From there, further work should be done to analyze and use the drivers of serious delinquency already identified in this project to continue to hone the model performance. Finally, further exploration of the features contributing to serious delinquency should be done to identify more precise groups of borrowers who are more at risk of serious delinquency. 
 
  
 #### 5. DELIVERABLES:
