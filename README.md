@@ -30,9 +30,9 @@ Table of Contents
 * V. [Project Reproduction](#v-project-reproduction)<br>
  
  
- 
-## I. PROJECT OVERVIEW - EXECUTIVE SUMMARY
- 
+<details> 
+<summary>## I. PROJECT OVERVIEW - EXECUTIVE SUMMARY</summary>
+ <br>
 #### 1. GOAL:
 The goal of this project is to build a model a classification model that can predict who will be seriously delinquent in loan repayment beased upon historical data.
  
@@ -67,7 +67,7 @@ The initial hypothesis of the project was that those with serious delinquency we
 - [x] wrangle.py - provides reproducible code to automate acquiring, preparing, and splitting the data
 - [x] Report Jupyter Notebook - provides final presentation-ready wrangle and exploration
 
- 
+</details> 
  
 ## II. PROJECT DATA CONTEXT
  
