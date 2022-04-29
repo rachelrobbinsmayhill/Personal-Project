@@ -31,7 +31,7 @@ Table of Contents
 ## I. PROJECT OVERVIEW - EXECUTIVE SUMMARY
 
 #### 1. GOAL:
-The goal of this report is to identify drivers of borrower serious delinquency and to build a model that can be used to help borrowers and banking institutions make the best financial decisions. 
+The goal of this report is to identify drivers of borrower serious delinquency and to build a model that can be used to help borrowers and banking institutions make the best financial decisions. For the purpose of this project, 'serious delinquency' is defined as any time a borrower has been 90 days or more past due on payment. 
  
 #### 2. DESCRIPTION:
 Banks play a crucial role in market economies. They decide who can get financing and on what terms and can make or break investment decisions. For markets and society to function, individuals and companies need access to credit. 
