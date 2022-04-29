@@ -15,9 +15,13 @@ def get_client_data():
     '''
     This function acquires data from a local .csv file and informs the user of completion.
     '''
+    # provide message on status for user
     print('Reading from .csv file.')
+    # pass .csv data into a dataframe
     df = pd.read_csv('client_data.csv')
+    # provide message on status for user
     print('Data acquisition complete.')
+    
     return df
 
 
@@ -26,8 +30,8 @@ def get_client_data():
 def wrangle_client(df):
     '''
     This function takes in a dataframe, drops the Unnamed index column, drops all rows with null values within the dataframe. 
-    It then renames columns for understanding and ease of use, then creates binned categorical columns 
-    for ages and dependent numbers. 
+    It then renames columns for understanding and ease of use, then creates binned categorical columns for ages and dependent numbers. 
+    Lastly, it manually scales the monthly_income column.
     '''
 
     # drop Unnamed column as it is not needed
@@ -71,9 +75,12 @@ def split_data(df):
     The function returns, train, validate and test dataframes. 
     '''
    
+    # Split data into 2 groups train/validate and test
     train_val, test = train_test_split(df, train_size=0.8,random_state=123)
+    # Split train/validate into 2 separate groups
     train, validate = train_test_split(train_val, train_size=0.7, random_state=123)
     
+    # provide user with the shape of each split
     print(f'train -> {train.shape}')
     print(f'validate -> {validate.shape}')
     print(f'test -> {test.shape}')
