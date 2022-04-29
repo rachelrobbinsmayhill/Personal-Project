@@ -1,13 +1,10 @@
 CAN I GET A LITTLE CREDIT?
 
-An Exploration of Credit Worthiness
-
-Using Classification to Predict Serious Repayment Delinquency
+An Exploration of Credit Worthiness  ->  Using Classification to Predict Serious Repayment Delinquency
 
 ===
 
-Personal Project        
-By: Rachel Robbins-Mayhill     |     Codeup     |     Innis Cohort     |     April 2022
+Personal Project By:   Rachel Robbins-Mayhill     |     Codeup     |     Innis Cohort     |     April 2022
  
 ===
  
