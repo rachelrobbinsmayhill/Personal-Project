@@ -1,11 +1,8 @@
-CAN I GET A LITTLE CREDIT?
+Personal Project By:   Rachel Robbins-Mayhill     |     Codeup     |     Innis Cohort     |     April 2022
 
+## CAN I GET A LITTLE CREDIT?
 An Exploration of Credit Worthiness  ->  Using Classification to Predict Serious Repayment Delinquency
 
-===
-
-Personal Project By:   Rachel Robbins-Mayhill     |     Codeup     |     Innis Cohort     |     April 2022
- 
 ===
  
 Table of Contents
