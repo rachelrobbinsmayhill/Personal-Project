@@ -31,7 +31,7 @@ Table of Contents
 ## I. PROJECT OVERVIEW - EXECUTIVE SUMMARY
 
 #### 1. GOAL:
-The goal of this project is to build a model a classification model that can predict who will be seriously delinquent in loan repayment beased upon historical data.
+The goal of this report is to identify drivers of borrower serious delinquency and to build a model that can be used to help borrowers and banking institutions make the best financial decisions. 
  
 #### 2. DESCRIPTION:
 Banks play a crucial role in market economies. They decide who can get financing and on what terms and can make or break investment decisions. For markets and society to function, individuals and companies need access to credit. 
