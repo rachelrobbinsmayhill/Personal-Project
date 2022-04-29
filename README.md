@@ -17,8 +17,8 @@ Table of Contents
 * I. [Project Overview](#i-project-overview)<br>
 [1. Goals](#1-goal)<br>
 [2. Description](#2-description)<br>
-[3. Initial Questions](#3initial-questions)<br>
-[4. Formulating Hypotheses](#4-formulating-hypotheses)<br>
+[3. Initial Thoughts & Hypothesis](#3initial-thoughts--hypothesis)<br>
+[4. Initial Questions](#4initial-questions)<br>
 [5. Deliverables](#5-deliverables)<br>
 * II. [Project Data Context](#ii-project-data-context)<br>
 [1. Data Dictionary](#1-data-dictionary)<br>
@@ -45,14 +45,18 @@ Banks play a crucial role in market economies. They decide who can get financing
 Credit scoring algorithms, which make a guess at the probability of default, are the methods banks use to determine whether or not a loan should be granted. This project aims to improve upon the state of the art in credit scoring, by predicting the probability that somebody will experience serious delinquency in the next two years. For the purpose of this project 'Serious Delinquency' is defined as being 90 days or more past due on payment. 
 
 I am interested in this project because identifying at-risk borrower populations helps to protect the consumer, the business, the market, and society as a whole. Identifying borrowers who are at risk of default helps to prevent the consumer from entering into a situation that could be harmful to their long-term financial stability. It helps the banking institution prevent significant and costly losses which could impact business sustainability and limit the potential to help others. Lastly, as we saw with the housing crisis of 2008, accurately identifying at-risk loan applicants can prevent the destabilizing of the market which can have far-reaching consequences for society as a whole.
- 
-#### 3.INITIAL QUESTIONS:
+
+#### 3.INITIAL THOUGHTS & HYPOTHESIS: 
+The initial hypothesis of the project was that those with serious delinquency were younger, had lower monthly income, higher debt to income ratio, and a greater ratio of revolving unsecured line utilization. The thought behind this was younger people are at the beginning of their income trajectory within their professional lives, making less than those with more life/professional experience as they get older. Younger borrowers may still be learning to manage their finances and may take on more debt than reasonable given their financial situation. These thoughts and the subsequent hypothesis drove the initial exploratory questions for this project. 
+
+
+#### 4.INITIAL QUESTIONS:
 - Are borrowers in certain age groups more likely to be seriously delinquent?
 - Are borrowers with lower monthly income more likely to be seriously delinquent?
 - Are borrowers with higher debt to income ratio more likely to be seriously delinquent?
 - Are borrowers with higher revolving unsecured line utilization more likely to be seriously delinquent?
  
-#### 4. KEY FINDINGS:
+#### 5. KEY FINDINGS:
  
  
  
