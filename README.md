@@ -81,7 +81,7 @@ The final DataFrame used to explore the data for this project contains the follo
  
 |  Variables             |    Definition                              |    DataType             |
 | :--------------------  | :--------------------------------------    | :--------------------   |
-serious_ delinquency (*target)  | Person experienced 90 days past due delinquency or worse | booolean(Y/N) | 
+serious_ delinquency (*target)  | Person experienced 90 days past due delinquency or worse | boolean(Y/N) | 
 revolv_unsec_utilization | Total balance on credit cards and personal lines of credit except real estate and no installment debt like car loans divided by the sum of credit limits | float (percentage) | 
 quantity_real_estate_loans | Number of mortgage and real estate loans including home equity lines of credit | integer | 
 quantity_loans_and_lines | Number of Open loans (installment like car loan or mortgage) and Lines of credit (e.g. credit cards) | integer | 
